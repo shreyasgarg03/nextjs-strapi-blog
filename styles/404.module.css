@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  text-align: center;
+}
+
+.error h1 {
+  font-size: 50px;
+}
