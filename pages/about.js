@@ -1,8 +1,14 @@
+import Link from 'next/link'
+
+// Layout
+import Layout from '../components/Layout'
+
 export default function AboutPage() {
   return (
-    <div>
+    <Layout title='DJ Events Blog'>
       <h1>About Page!!</h1>
       <p>This is an app to find the dj and other musical events.</p>
-    </div>
+      <Link href='/'>Home</Link>
+    </Layout>
   )
 }
