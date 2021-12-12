@@ -3,6 +3,10 @@ import Head from 'next/head'
 // styles
 import styles from '../styles/Layout.module.css'
 
+// components
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 export default function Layout({ title, description, keywords, children }) {
   return (
     <div>
@@ -12,16 +16,12 @@ export default function Layout({ title, description, keywords, children }) {
         <meta name='keywords' keywords={keywords} />
       </Head>
       {/* header */}
-      <header>
-        <h1 style={{ textAlign: 'center' }}>Footer</h1>
-      </header>
+      <Header />
       {/* page content */}
       <div className={styles.container}>{children}</div>
 
       {/* footer */}
-      <footer>
-        <h1 style={{ textAlign: 'center' }}>Footer</h1>
-      </footer>
+      <Footer />
     </div>
   )
 }
